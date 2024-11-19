@@ -19,8 +19,8 @@ This project demonstrates real-time face detection using Python and OpenCV. It u
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/real-time-face-detection.git
-   cd real-time-face-detection
+   git clone https://github.com/tunde262/face_detector_opencv.git
+   cd face_detector_opencv
 
 2. Install the necessary dependencies:
 
@@ -31,7 +31,7 @@ This project demonstrates real-time face detection using Python and OpenCV. It u
 
 1. Make sure your webcam is connected and functional.
 
-2. Run the Python script to start face detection:
+2. Run the Python script to start the program:
    
    ```bash
    python face_detector.py
