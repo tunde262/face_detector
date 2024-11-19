@@ -4,10 +4,20 @@ This project demonstrates real-time face detection using Python and OpenCV. It u
 
 ![thumbnail](https://github.com/tunde262/face_detector_opencv/blob/main/assets/thumbnail.png?raw=true)
 
+## Project Goal
+
+The goal of this project was to explore the applications of computer vision in object detection and build an app using OpenCV to process video for face detection.
+
 ## Features
 - Real-time face detection using a webcam feed.
 - Drawing rectangles around faces as they are detected.
 - Designed to be easy to run and modify for other applications of computer vision.
+
+## Code Explanation
+- The program uses OpenCV’s `CascadeClassifier` with a pre-trained Haar Cascade model to detect faces.
+- The webcam feed is captured using `cv2.VideoCapture(0)`, and each frame is converted to grayscale before passing through the detection algorithm.
+- Detected faces are highlighted using rectangles (`cv2.rectangle()`).
+- The program runs in a loop, processing the video frames until the `q` key is pressed.
 
 ## Requirements
 - Python 3.x
@@ -37,13 +47,3 @@ This project demonstrates real-time face detection using Python and OpenCV. It u
    python face_detector.py
 
 3. The webcam feed will appear with rectangles drawn around any detected faces. Press the q key to exit the program.
-
-## Code Explanation
-- The program uses OpenCV’s `CascadeClassifier` with a pre-trained Haar Cascade model to detect faces.
-- The webcam feed is captured using `cv2.VideoCapture(0)`, and each frame is converted to grayscale before passing through the detection algorithm.
-- Detected faces are highlighted using rectangles (`cv2.rectangle()`).
-- The program runs in a loop, processing the video frames until the `q` key is pressed.
-
-## Project Goal
-
-The goal of this project was to explore the applications of computer vision in object detection and build an app using OpenCV to process video for face detection.
