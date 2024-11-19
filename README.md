@@ -19,3 +19,29 @@ This project demonstrates real-time face detection using Python and OpenCV. It u
    ```bash
    git clone https://github.com/yourusername/real-time-face-detection.git
    cd real-time-face-detection
+
+2. Install the necessary dependencies:
+
+   ```bash
+   pip install opencv-python numpy
+
+## How To Run
+
+1. Make sure your webcam is connected and functional.
+
+2. Run the Python script to start face detection:
+   
+   ```bash
+   python face_detector.py
+
+3. The webcam feed will appear with rectangles drawn around any detected faces. Press the q key to exit the program.
+
+## Code Explanation
+- The program uses OpenCV’s `CascadeClassifier` with a pre-trained Haar Cascade model to detect faces.
+- The webcam feed is captured using `cv2.VideoCapture(0)`, and each frame is converted to grayscale before passing through the detection algorithm.
+- Detected faces are highlighted using rectangles (`cv2.rectangle()`).
+- The program runs in a loop, processing the video frames until the `q` key is pressed.
+
+## Project Goal
+
+The goal of this project was to explore the applications of computer vision in object detection and build an app using OpenCV to process video for face detection.
